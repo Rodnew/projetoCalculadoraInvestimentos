@@ -47,10 +47,10 @@ function generateReturnsArray(
     const totalInterestReturns = totalAmount - investedAmount;
     returnsArray.push({
       investedAmount,
-      interestReturns,,
+      interestReturns,
       totalInterestReturns,
       month: timeReference,
-      totalAmount, 
+      totalAmount,
     });
   }
 
