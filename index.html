@@ -27,6 +27,7 @@
               type="text"
               class="w-5/6 rounded-r-lg px-2"
               id="starting-amount"
+              name="starting-amount"
               placeholder="0.00"
               required
             />
@@ -48,6 +49,7 @@
               class="w-5/6 rounded-r-lg px-2"
               placeholder="0.00"
               id="additional-contribution"
+              name="additional-contribution"
             />
           </div>
         </div>
@@ -58,6 +60,7 @@
               type="text"
               class="w-2/3 rounded-l-lg px-2"
               id="time-amount"
+              name="time-amount"
               placeholder="0"
               required
             />
@@ -85,11 +88,13 @@
               type="text"
               class="w-1/2 px-2"
               id="return-rate"
+              name="return-rate"
               placeholder="0"
               required
             />
             <select
               id="evaluation-period"
+              name="evaluation-period"
               class="w-1/3 rounded-r-lg border-l-2 border-emerald-600 text-center hover:bg-emerald-950 hover:text-slate-200"
             >
               <option value="monthly">Mensal</option>
@@ -112,6 +117,7 @@
               type="text"
               class="w-5/6 rounded-r-lg px-2"
               id="tax-rate"
+              name="tax-rate"
               placeholder="0"
               required
             />
@@ -122,6 +128,7 @@
         <button
           id="calculate-results"
           form="investment-form"
+          type="submit"
           class="w-1/2 rounded-lg bg-emerald-950 text-slate-200 hover:bg-emerald-800"
         >
           Calcular
