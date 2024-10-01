@@ -12,7 +12,7 @@
     >
       <h1 class="text-2xl font-bold px-6 py-2">Calculadora de Investimentos</h1>
       <form id="investment-form" class="w-full">
-        <div class="flex w-full flex-col px-6 my-2">
+        <div class="flex w-full flex-col px-6 my-2 h-[4.25rem]">
           <label for="starting-amount" class="font-bold text-gray-700"
             >Investimento inicial</label
           >
@@ -33,7 +33,8 @@
             />
           </div>
         </div>
-        <div class="flex w-full flex-col px-6 my-2">
+
+        <div class="flex w-full flex-col px-6 my-2 h-[4.25rem]">
           <label for="additional-contribution" class="font-bold text-gray-700"
             >Aportes adicionais</label
           >
@@ -53,7 +54,7 @@
             />
           </div>
         </div>
-        <div class="flex w-full flex-col px-6 my-2">
+        <div class="flex w-full flex-col px-6 my-2 h-[4.25rem]">
           <label for="time-amount" class="font-bold text-gray-700">Prazo</label>
           <div class="flex">
             <input
@@ -73,7 +74,7 @@
             </select>
           </div>
         </div>
-        <div class="flex w-full flex-col px-6 my-2">
+        <div class="flex w-full flex-col px-6 my-2 h-[4.25rem]">
           <label for="return-rate" class="font-bold text-gray-700"
             >Rentabilidade</label
           >
@@ -94,7 +95,6 @@
             />
             <select
               id="evaluation-period"
-              name="evaluation-period"
               class="w-1/3 rounded-r-lg border-l-2 border-emerald-600 text-center hover:bg-emerald-950 hover:text-slate-200"
             >
               <option value="monthly">Mensal</option>
@@ -102,7 +102,7 @@
             </select>
           </div>
         </div>
-        <div class="flex w-full flex-col px-6 my-2">
+        <div class="flex w-full flex-col px-6 my-2 h-[4.25rem]">
           <label for="tax-rate" class="font-bold text-gray-700"
             >Impostos sobre lucro</label
           >
@@ -133,7 +133,14 @@
         >
           Calcular
         </button>
-        <button class="w-1/2 rounded-lg hover:bg-emerald-500">Limpar</button>
+        <button
+          id="clear-button"
+          form="investment-form"
+          type="reset"
+          class="w-1/2 rounded-lg hover:bg-emerald-500"
+        >
+          Limpar
+        </button>
       </div>
     </aside>
     <main>
